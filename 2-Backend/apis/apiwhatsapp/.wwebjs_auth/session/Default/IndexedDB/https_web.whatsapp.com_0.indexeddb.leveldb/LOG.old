@@ -1,0 +1,12 @@
+2023/11/01-19:36:32.882 8e4 Reusing MANIFEST C:\Facultad Materia 2 año 2 Cuatriestre\proyecto nube\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/01-19:36:32.883 8e4 Recovering log #43
+2023/11/01-19:36:33.464 8e4 Reusing old log C:\Facultad Materia 2 año 2 Cuatriestre\proyecto nube\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000043.log 
+2023/11/01-19:36:47.070 1428 Level-0 table #48: started
+2023/11/01-19:36:47.172 1428 Level-0 table #48: 1081934 bytes OK
+2023/11/01-19:36:47.174 1428 Delete type=0 #43
+2023/11/01-19:36:47.184 1428 Compacting 1@1 + 1@2 files
+2023/11/01-19:36:47.359 1428 Generated table #49@1: 27638 keys, 1062059 bytes
+2023/11/01-19:36:47.359 1428 Compacted 1@1 + 1@2 files => 1062059 bytes
+2023/11/01-19:36:47.361 1428 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/11/01-19:36:47.361 1428 Delete type=2 #45
+2023/11/01-19:36:47.361 1428 Delete type=2 #48
