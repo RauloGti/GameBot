@@ -8,9 +8,18 @@ wappinit();
 
 
 app.get('/',(req, res) => res.send("Buenas"));
-//aqui deberia redireccionar a cognito. para el login. seguro.
 
-//luego del ingreso se debera ejecutar la funcion wappinit. para que ejecute
-// el codigo inicial de la aplicacion y asi se hace el el emparejamiento del celular.
+app.get('/admin', (req, res) => {
+    res.sendFile('C:/Facultad Materia 2 año 2 Cuatriestre/BotGame/1-Frontend/private/Admin.html');
+});
+
+
+app.get('/index', (req, res) => {
+    
+    res.sendFile('C:/Facultad Materia 2 año 2 Cuatriestre/BotGame/1-Frontend/public/index.html');
+    
+    // Iniciar la aplicación y la API de WhatsApp aquí
+    // Puedes llamar a tu función wappinit() desde aquí.
+});
 
 app.listen(PORT, ()=> console.log(`Servidor Funcionando en el puerto: ${PORT}`));

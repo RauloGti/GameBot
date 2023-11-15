@@ -14,13 +14,21 @@ const wappinit = () => {
     });
 
     client.on('ready', () => {
-        console.log("Numero Whatsapps Conectado. Envia la palabra jugar y recibe la trivia");
+        console.log("Numero Whatsapps Conectado Exitosamente.");
     });
 
     client.on('message', async (message) => {
     const userPhoneNumber = message.from;
-
+    console.log(userPhoneNumber);
+    
     switch (message.body.toLowerCase()) {
+        case 'iniciar':
+            // Recibir el nombre del frontend y el número del mensaje capturado
+            
+            const nombreFrontend = obtenerNombreDelFrontend(); // Implementa esta función para obtener el nombre del frontend.
+            const mensajeBienvenida = `Hola ${nombreFrontend}, bienvenido a la trivia. Envía "Jugar" para comenzar.`;
+            client.sendMessage(userPhoneNumber, mensajeBienvenida);
+            break;
         case 'jugar':
             triviaQuestion = await getTriviaQuestion();
             if (triviaQuestion) {
